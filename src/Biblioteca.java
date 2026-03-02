@@ -112,6 +112,23 @@ public class Biblioteca {
         return numPaginasActualizado;
     }
 
+    /**
+     * Devueve un String con el catalogo de libros
+     * @return String para catalogo de libros
+     */
+    public String obtaincatalogo(){
+        StringBuilder sb = new StringBuilder("Catalogo { ");
+
+        for (int i = 0; i < CANT_MAX_LIBROS; i++) {
+            if (catalogo[i] != null) {
+                sb.append(catalogo[i].toString());
+            }
+            sb.append("\n");
+
+        }
+        sb.append("}");
+        return sb.toString();
+    }
 
 
 
