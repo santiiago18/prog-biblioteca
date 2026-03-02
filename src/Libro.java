@@ -63,7 +63,19 @@ public class Libro {
     }
 
 
+    /**
+     * Actualiza el numero de paginas que contiene el libro
+     * @param numPaginas nueva cantidad de paginas
+     * @return tre si hay podido cambiarse y false si no se ha oidido cambir
+     */
+    public boolean updatePaginas(int numPaginas) {
+        boolean resultado;
 
-
-
+        if (numPaginas >= 0) {
+            resultado = false;
+        }else  {
+            resultado = true;
+        }
+        return resultado;
+    }
 }
